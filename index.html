@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privent Store</title>
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        /* Add CSS for larger product image */
+        .product-image-large {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        /* CSS for header and footer */
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 20px;
+        }
+        /* CSS for Buy Now button */
+        a[href="https://wa.me/9885053300"] {
+            display: block;
+            width: fit-content;
+            margin: 10px auto; /* This will center the button */
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f3f3f3;">
+
+    <header>
+        <h1>Welcome To Privent Store</h1>
+    </header>
+
+    <div style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #fff; border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 24px;">Products</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content:center;">
+            <!-- Product 1 -->
+            <div style="width: 200px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; background-color: #f9f9f9; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+                <img src="product1.jpeg" alt="Product 1" onclick="toggleImage(this)" class="product-image-large">
+                <img src="product1back.jpeg" alt="Product 1 Back" style="display: none;" class="product-image-large">
+                <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 5px;">Hope black t-shirt for men </h3>
+                <p style="font-size: 14px; color: #666;">Black t-shirt half sleeve for men All sizes avilable </p>
+                <p style="font-size: 14px; color: #666;">Price: 650 </p>
+                <a href="https://wa.me/9885053300 'Hope'1">Buy Now</a>
+            </div>
+            <!-- Product 2 -->
+            <div style="width: 200px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; background-color: #f9f9f9; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+                <img src="product2.jpg" alt="Product 2" onclick="toggleImage(this)" class="product-image-large">
+                <img src="product2back.jpg" alt="Product 2 Back" style="display: none;" class="product-image-large">
+                <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 5px;">Product 2</h3>
+                <p style="font-size: 14px; color: #666;">Description: Description for Product 2</p>
+                <p style="font-size: 14px; color: #666;">Price: $60</p>
+                <a href="https://wa.me/9885053300">Buy Now</a>
+            </div>
+            <!-- Product 3 -->
+            <div style="width: 200px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; background-color: #f9f9f9; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+                <img src="product3.jpg" alt="Product 3" onclick="toggleImage(this)" class="product-image-large">
+                <img src="product3back.jpg" alt="Product 3 Back" style="display: none;" class="product-image-large">
+                <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 5px;">Product 3</h3>
+                <p style="font-size: 14px; color: #666;">Description: Description for Product 3</p>
+                <p style="font-size: 14px; color: #666;">Price: $70</p>
+                <a href="https://wa.me/9885053300">Buy Now</a>
+            </div>
+            <!-- Product 4 -->
+            <div style="width: 200px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; background-color: #f9f9f9; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+                <img src="product4.jpg" alt="Product 4" onclick="toggleImage(this)" class="product-image-large">
+                <img src="product4back.jpg" alt="Product 4 Back" style="display: none;" class="product-image-large">
+                <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 5px;">Product 4</h3>
+                <p style="font-size: 14px; color: #666;">Description: Description for Product 4</p>
+                <p style="font-size: 14px; color: #666;">Price: $80</p>
+                <a href="https://wa.me/9885053300">Buy Now</a>
+            </div>
+            <!-- Product 5 -->
+            <div style="width: 200px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; background-color: #f9f9f9; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+                <img src="product5.jpg" alt="Product 5" onclick="toggleImage(this)" class="product-image-large">
+                <img src="product5back.jpg" alt="Product 5 Back" style="display: none;" class="product-image-large">
+                <h3 style="font-size: 18px; margin-top: 10px; margin-bottom: 5px;">Product 5</h3>
+                <p style="font-size: 14px; color: #666;">Description: Description for Product 5</p>
+                <p style="font-size: 14px; color: #666;">Price: $90</p>
+                <a href="https://wa.me/9885053300">Buy Now</a>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Our Store. All rights reserved.</p>
+        <a href="hut2.html" style="color: #fff; text-decoration: none; margin-top: 10px; display: block;">About Us</a>
+        <a href="hut10.html" style="color: #fff; text-decoration: none; margin-top: 10px; display: block;">Privacy Policy</a>
+        <a href="hut11.html" style="color: #fff; text-decoration: none; margin-top: 10px; display: block;">frequently asked questions</a>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle between front and back images
+        function toggleImage(image) {
+            var backImage = image.nextElementSibling;
+            if (backImage.style.display === "none") {
+                backImage.style.display = "block";
+                image.style.display = "none";
+            } else {
+                backImage.style.display = "none";
+                image.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
